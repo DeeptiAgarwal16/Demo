@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board | Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Professional Job Board</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search job titles...">
+            <input type="text" id="location" placeholder="Location">
+            <input type="text" id="experience" placeholder="Experience">
+            <button onclick="searchJobs()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="job-list" class="job-container"></div>
+        <button id="load-more" onclick="loadMoreJobs()">Load More Jobs</button>
+    </main>
+</body>
+</html>
